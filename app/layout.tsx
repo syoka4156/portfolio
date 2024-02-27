@@ -35,32 +35,36 @@ const defaultTheme = createTheme({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Box sx={{ display: 'flex' }}>
-        <AppBar position='fixed'>
-          <Toolbar>
-            <Box sx={{ flexGrow: 1 }}>
-              <Link href='/' underline='none' color='inherit'>
-                <ProfileIcon fontSize='large' />
-              </Link>
-            </Box>
-            <Button color='inherit' size='small' rel='noopener' href='/blog'>
-              Blog
-            </Button>
-          </Toolbar>
-        </AppBar>
-      </Box>
-      <Box
-        component='main'
-        sx={{
-          flexGrow: 1,
-          p: 3,
-          marginTop: '64px',
-          background: 'white',
-        }}
-      >
-        {children}
-      </Box>
-    </ThemeProvider>
+    <html>
+      <body>
+        <ThemeProvider theme={defaultTheme}>
+          <Box sx={{ display: 'flex' }}>
+            <AppBar position='fixed'>
+              <Toolbar>
+                <Box sx={{ flexGrow: 1 }}>
+                  <Link href='/' underline='none' color='inherit'>
+                    <ProfileIcon fontSize='large' />
+                  </Link>
+                </Box>
+                <Button color='inherit' size='small' rel='noopener' href='/blog'>
+                  Blog
+                </Button>
+              </Toolbar>
+            </AppBar>
+          </Box>
+          <Box
+            component='main'
+            sx={{
+              flexGrow: 1,
+              p: 3,
+              marginTop: '64px',
+              background: 'white',
+            }}
+          >
+            {children}
+          </Box>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
