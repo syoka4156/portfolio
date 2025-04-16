@@ -2,7 +2,7 @@ import { BasicContent } from '@app/types';
 
 export const education: BasicContent[] = [
   {
-    period: 'Apr 2025 - Current',
+    period: 'Apr 2025 - Present',
     content: "PhD, School of Engineering, The University of Tokyo, Japan",
   },
   {
