@@ -14,6 +14,7 @@ export type Member = {
 export type BasicContent = {
   period: string;
   content: string;
+  supplement?: string[];
 };
 
 export type PostItem = {

@@ -2,19 +2,23 @@ import { BasicContent } from '@app/types';
 
 export const education: BasicContent[] = [
   {
-    period: 'April 2023 - Present',
+    period: 'Apr 2025 - Current',
+    content: "PhD, School of Engineering, The University of Tokyo, Japan",
+  },
+  {
+    period: 'Apr 2023 - Mar 2025',
     content: "Master's degree, School of Engineering, The University of Tokyo, Japan",
   },
   {
-    period: 'October 2023 - Present',
+    period: 'Oct 2023 - Apr 2024',
     content: 'Short-term Research, Department of Engineering, University of Cambridge, UK',
   },
   {
-    period: 'April 2019 - March 2023',
+    period: 'Apr 2019 - Mar 2023',
     content: "Bachelor's degree, Department of Engineering, The University of Tokyo, Japan",
-  },
-  {
-    period: 'March 2022',
-    content: 'Full-time Online English Course, Otago University, New Zealand',
+    supplement: [
+      'Mathematics and Data Science Education Program',
+      'Global Competence Certificate',
+    ],
   },
 ];

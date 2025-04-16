@@ -2,7 +2,7 @@ import { BasicContent } from '@app/types';
 
 export const qualification: BasicContent[] = [
   {
-    period: 'April 2023',
+    period: 'Jun 2023',
     content: '応用情報技術者試験 (Applied Information Technology Engineer Examination, AP)',
   },
   {
